@@ -1,4 +1,17 @@
-<% @books.each do |book| %>
-<%= book.title %>
+<head>
+  <link rel="stylesheet" href="results.css">
+</head>
+<body>
 
+<% @books.each do |book| %>
+<div>
+<h3 id = "title"><%= book.title %></h3>
+<h3 id = "author"><%= book.authors %></h3>
+
+<section id = "bookdes">
+  <img src="<%=book.image_link(:zoom => 2) %>" alt="book img">
+  <%= book.description %>
+</section>
+</div>
 <% end %>
+</body>

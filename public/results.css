@@ -1,0 +1,35 @@
+body{
+  margin: 0;
+  font-family: sans-serif;
+  background-color: lightblue;
+}
+
+#title{
+  grid-area: "title";
+  text-align: center;
+}
+
+#author{
+  grid-area: "author";
+  text-align: center;
+  color: green;
+}
+
+img {
+  grid-area: "img";
+  text-align: center;
+}
+
+#bookdes {
+  grid-area: "description";
+  text-align: center;
+}
+
+div{
+  display: inline grid;
+  grid-template: 40% 50%;
+  grid-template-areas:
+  "img" "title"
+  . "author"
+  . "description";
+}
